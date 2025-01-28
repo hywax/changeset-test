@@ -18,20 +18,27 @@ export default {
     ],
     '@semantic-release/release-notes-generator',
     [
+      '@semantic-release/changelog',
+      {
+        changelogFile: 'CHANGELOG.md'
+      }
+    ],
+    [
       '@semantic-release/exec',
       {
         // eslint-disable-next-line no-template-curly-in-string
-        publishCmd: 'pnpm version ${nextRelease.version} --git-tag-version=false',
+        prepareCmd: 'pnpm version ${nextRelease.version} --git-tag-version=false',
       },
     ],
-    '@semantic-release/github',
+
     [
       '@semantic-release/git',
       {
-        assets: ['package.json', 'packages/**/package.json'],
+        assets: ['CHANGELOG.md', 'package.json', 'projects/**/CHANGELOG.md', 'packages/**/package.json'],
         // eslint-disable-next-line no-template-curly-in-string
         message: 'chore(release): ${nextRelease.version} [skip ci]',
-      },
+      }
     ],
+    '@semantic-release/github'
   ],
 }
