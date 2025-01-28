@@ -1,5 +1,11 @@
 # @changeset-test/foo
 
+## 3.0.3
+
+### Patch Changes
+
+- [`3b85330`](https://github.com/hywax/changeset-test/commit/3b853307709df6aff93da9cfb50bacbd51b7e32b) Thanks [@hywax](https://github.com/hywax)! - release
+
 ## 3.0.2
 
 ### Patch Changes
