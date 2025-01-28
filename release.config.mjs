@@ -28,7 +28,7 @@ export default {
     [
       '@semantic-release/git',
       {
-        assets: ['package.json', 'apps/**/package.json'],
+        assets: ['package.json', 'packages/**/package.json'],
         // eslint-disable-next-line no-template-curly-in-string
         message: 'chore(release): ${nextRelease.version} [skip ci]',
       },
