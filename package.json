@@ -1,6 +1,7 @@
 {
   "name": "changeset-test",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.15.4",
   "private": true,
   "scripts": {
     "changeset": "changeset"
