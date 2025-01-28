@@ -1,1 +1,1 @@
-console.log('foo 123123')
+console.log('foo')
