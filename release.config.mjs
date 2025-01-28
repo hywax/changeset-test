@@ -34,7 +34,7 @@ export default {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json', 'projects/**/CHANGELOG.md', 'packages/**/package.json'],
+        assets: ['CHANGELOG.md', 'package.json', 'packages/**/CHANGELOG.md', 'packages/**/package.json'],
         // eslint-disable-next-line no-template-curly-in-string
         message: 'chore(release): ${nextRelease.version} [skip ci]',
       }
