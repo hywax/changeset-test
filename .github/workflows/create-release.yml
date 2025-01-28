@@ -34,13 +34,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Create Release Pull Request
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          title: "ci(repo): version packages"
-          commit: "ci(repo): version packages"
-          publish: pnpm changeset publish
-          version: pnpm changeset version
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm run release
