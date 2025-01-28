@@ -1,5 +1,11 @@
 # @changeset-test/foo
 
+## 3.0.0
+
+### Major Changes
+
+- [`3fa4508`](https://github.com/hywax/changeset-test/commit/3fa4508649f15acbc46fffc48319701512c73011) Thanks [@hywax](https://github.com/hywax)! - noew
+
 ## 2.0.0
 
 ### Major Changes
