@@ -34,7 +34,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Release
+      - name: Run changeset
+        uses: changesets/action@v1
+        with:
+          publish: pnpm changeset publish
+          commit: 'chore(packages): version packages'
+          title: 'chore(packages): version packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm run release
