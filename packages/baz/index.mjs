@@ -1,1 +1,1 @@
-console.log('log chore 123123213')
+console.log('log chore')
