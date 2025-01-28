@@ -41,4 +41,4 @@ jobs:
           commit: 'chore(packages): version packages'
           title: 'chore(packages): version packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY }}
