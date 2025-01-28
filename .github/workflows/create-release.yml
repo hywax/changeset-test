@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - "main"
+    paths:
+      - ".changeset/**.md"
 
 env:
   HUSKY: 0
