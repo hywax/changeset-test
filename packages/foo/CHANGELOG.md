@@ -1,5 +1,11 @@
 # @changeset-test/foo
 
+## 2.0.0
+
+### Major Changes
+
+- [`62b8b93`](https://github.com/hywax/changeset-test/commit/62b8b93b05de3e40c062ceb9f5fd4362d6519542) Thanks [@hywax](https://github.com/hywax)! - settings
+
 ## 0.1.0
 
 ### Minor Changes
